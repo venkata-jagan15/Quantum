@@ -1,0 +1,171 @@
+Comparative Analysis of Classical and Quantum-Assisted Machine Learning Models for Early Heart Disease Prediction
+ 
+                      
+                                          
+             
+
+ 
+
+
+
+Under the guidance of
+Dr. V. Vasudha Rani
+Associate Professor 
+GMR Institute of Technology 
+
+Objectives:
+To implement classical machine learning models (Logistic Regression, Random Forest, and SVM) for heart disease prediction
+To design and evaluate quantum-assisted models (QSVM and VQC) using quantum simulators
+To compare classical and quantum-assisted models using standard performance metrics
+To analyze the effectiveness of quantum models on reduced feature sets
+Base paper :
+Mehroush Banday, Sherin Zafar, Parul Agarwal, M. Afshar Alam, Siddhartha Sankar Biswas, Imran Hussain, and K. M. Abubeker,“Predictive Analysis of Heart Disease Using Quantum-Assisted Machine Learning,” Discover Applied Sciences, 2025.
+Abstract
+Heart disease remains a leading cause of mortality worldwide, emphasizing the need for accurate and early risk prediction to support preventive healthcare. While traditional machine learning techniques are widely used for clinical decision-making, their ability to model complex, high-dimensional medical data is often limited. This mini project presents a comparative study of classical and quantum-assisted machine learning models for early heart disease risk prediction. Three classical classifiers—Logistic Regression, Random Forest, and Support Vector Machine (SVM)—are evaluated alongside two quantum-assisted models: the Quantum Support Vector Machine (QSVM). Clinical and demographic data are pre-processed using normalization, feature scaling, and missing-value handling techniques. Quantum models are implemented in simulated quantum environments, where classical features are encoded into quantum states using quantum feature maps and optimized through hybrid classical–quantum learning. Model performance is compared using accuracy, precision, recall, F1-score, and ROC-AUC. Results indicate that Random Forest performs strongly on full feature sets, while quantum-assisted models achieve competitive performance on reduced feature spaces by capturing non-linear feature relationships. In particular, VQC demonstrates stable  behavior with limited features, whereas QSVM is sensitive to feature encoding strategies. Despite current hardware constraints, this study highlights the potential of quantum-assisted learning as a complementary approach for future intelligent healthcare prediction systems.
+
+Keywords: Heart Disease Prediction; Quantum-Assisted Machine Learning; Logistic Regression; Random Forest; Support Vector Machine; QSVM; VQC; Healthcare Analytics
+Introduction
+Heart disease is one of the leading causes of death worldwide, making early detection and prevention crucial. Machine learning (ML) techniques such as Logistic Regression, Random Forest, and Support Vector Machines have been widely applied to predict heart disease risk. However, these classical models often face challenges in handling complex medical data and capturing non-linear feature interactions.This mini project introduces a quantum-assisted machine learning framework for heart disease prediction. In addition to classical ML classifiers, quantum-inspired models like the Quantum Support Vector Machine (QSVM) are implemented using a publicly available heart disease dataset. Data preprocessing steps—normalization, scaling, and handling missing values—are applied to ensure reliable performance.Classical features are encoded into quantum states through quantum feature maps, and optimization is carried out using classical optimizers on quantum simulators. Model performance is assessed using accuracy, precision, recall, F1-score, and ROC-AUC.The results show that quantum-assisted classifiers can effectively capture complex feature relationships and achieve competitive performance, even with fewer features. While current quantum hardware imposes limitations, this project highlights the potential of quantum-assisted approaches to enhance future healthcare prediction systems.
+Literature Survey
+Reference 1
+Title: A hybrid framework for heart disease prediction using classical and quantum-inspired machine learning techniques 
+Authors:  .Author names: Ankur Kumar, Sanjay Dhanka, Abhinav Sharma, Rohit Bansal, Mochammad Fahlevi, Fazla Rabby, and Mohammed Aljuaid  .
+Year of publication: 2025
+Objective: To develop a novel hybrid framework that combines classical and quantum-inspired machine learning techniques for heart disease prediction.
+Research gaps:
+Existing heart disease prediction models often struggle with large numbers of features, which reduce interpretability, increase computational cost, and can lower accuracy.
+Literature Survey
+Reference 2
+Title: Comparative analysis of heart disease prediction using logistic regression, SVM, KNN, and random forest with cross-validation for improved accuracy 
+Authors: Yagyanath Rimal, Navneet Sharma, Siddhartha Paudel, Abeer Alsadoon, Madhav Parsad Koirala, and Sumeet Gill
+Year of publication: 2025
+Objective: To preprocess an open heart disease dataset using imputation for numerical (mean) and categorical (chi-square-based) features and normalization.
+Research gaps:
+Optimal validation strategies (especially systematic cross-validation) for robust heart disease prediction models are still underexplored in the literature.
+Literature Survey
+Reference 3
+Title: QuCardio: Application of Quantum Machine Learning for Detection of Cardiovascular Diseases Authors: Sharanya Prabhu, Shourya Gupta, Gautham Manuru Prabhu, Aarushi Vishal Dhanuka, and K. Vivekananda Bhat 
+Year of publication: 2025
+Objective: To design Quantum Machine Learning models for multi-class classification of cardiovascular diseases using ECG images.
+Research gaps:
+Limited prior work on using QML for multi-class classification of cardiovascular diseases, especially on ECG image data.
+Literature Survey
+Reference 4
+Title: QuantumK-meansclusteringmethodfordetectingheartdisease using quantumcircuit approach 
+Authors: S S Kavitha1 · Narasimha Kaulgud1
+Year of publication: 2025
+Objective: To propose and evaluate Quantum Enhanced Machine Learning (QuEML) methods for heart disease prediction.
+Research gaps:
+Classical ML approaches for heart disease diagnosis face computational bottlenecks on larger or more complex data.
+Limited work systematically studies quantum‑enhanced ML for heart disease prediction on tabular clinical datasets.
+Literature Survey
+Reference 5
+Title: Revolutionizing heart disease prediction with quantum‑enhanced machine learning 
+Authors: S. Venkatesh Babu, P. Ramya, and Jeffin Gracewell
+Year of publication: 2025
+Objective: :To design and evaluate Quantum Enhanced Machine Learning (QuEML) models for heart disease prediction.
+To compare QuEML with traditional ML algorithms on the Kaggle heart disease dataset (1190 samples; 53% positive, 47% negative).
+Research gaps:
+Classical ML models for heart disease suffer from computational bottlenecks on large and complex datasets.
+Literature Survey
+Reference 6
+Title: Title: Heart Disease Prediction Using GridSearchCV and Random Forest 
+Authors: Shagufta Rasheed, G Kiran Kumar, D Malathi Rani, MVV Prasad Kantipudi, and Anila M 
+ Year of Publication:2019
+Objective:
+To evaluate machine learning algorithms (SVM, AdaBoost, Logistic Regression, Naive Bayes, Random Forest) for heart disease prediction using cardiovascular and clinical data from Kaggle.
+Research Gaps:
+Existing ML models often struggle with high-dimensional/complex datasets and lack optimal hyperparameter tuning for heart disease prediction
+multiple classifiers (SVM, AdaBoost, etc.)
+Literature Survey
+Reference 7
+Title:  Heart Disease Prediction Using Machine Learning Techniques
+Authors: Yash Urkude, Abhay Thakare, Pratiksha Nimbokar, Smita Rathod, and Gaurav Sawale
+Year of Publication:2022
+Objective:
+To develop a machine learning-based system for early prediction of heart disease risk using historical medical data from Kaggle (1025 instances with 11 features like age, sex, chest pain, BP, cholesterol)
+Research Gaps:
+Healthcare faces scalability issues due to limited workforce
+Challenges in discrete medical data decision-making
+Real-world implementation gaps, including interpretability and remote accessibility for physicians to minimize complications through early identification.
+Literature Survey
+Reference 8
+Title: Advancements In Heart Disease Prediction: A Machine Learning Approach For Early Detection And Risk Assessment
+Authors: Balaji Shesharao Ingole, Vishnu Ramineni, Nikhil Bangad, Koushik Kumar Ganeeb, and Priyankkumar Patel
+Year of Publication:2017
+Objective:
+To comprehend, assess, and analyze machine learning models' role in predicting heart disease risks using cross-sectional clinical data from Kaggle/UCI.
+To evaluate seven ML classifiers (Logistic Regression, Random Forest, Decision Tree, Naive Bayes, KNN, Neural Networks, SVM) with hyperparameter tuning for accuracy.
+Research Gaps:
+Need for efficient predictive models to detect heart diseases early amid global mortality rates and limited healthcare facilities.
+Literature Survey
+Reference 9
+Title: Quantum Machine Learning in Healthcare: Evaluating QNN and QSVM Models
+Authors:  Antonio Tudisco, Deborah Volpe, and Giovanna Turvani (Politecnico di Torino, Italy)
+Year of Publication:2025
+Objective:
+Evaluate Quantum Neural Networks (QNNs) and Quantum Support Vector Machines (QSVMs) for healthcare classification on imbalanced datasets like Prostate Cancer, Heart Failure, and Diabetes.
+Research Gaps:
+Classical ML struggles with imbalanced healthcare data, leading to biased models with poor minority class recall; quantum models exploit higher-dimensional Hilbert space for better pattern detection. 
+Limited evaluation of QNN vs. QSVM in real healthcare scenarios; this work shows QSVMs outperform QNNs (due to QNN overfitting) and beat classical models on highly imbalanced data like Heart Failure.
+Literature Survey
+Reference 10
+Title: Heart Diseases Prediction System Using Quantum Technology
+Authors: K. S. Rawat and T. Sharma
+Year of Publication: 2025
+Objective:To design a heart disease prediction system by integrating quantum computing techniques with machine learning models in order to improve prediction accuracy and computational efficiency for medical diagnosis.
+Research Gaps:Classical machine learning approaches face scalability and computational challenges when dealing with complex and high-dimensional medical datasets. Limited practical implementations exist that evaluate quantum-based prediction systems on real-world clinical heart disease datasets, highlighting the need for further experimental validation.
+Literature Survey
+Reference 11
+Title: AI-Based Preventive Healthcare Using Quantum Computing
+Authors: H. Jothi D., M. Y. Ali S., and G. A. Yokesh Kumar
+Year of Publication: 2025
+Objective:To propose an AI-driven preventive healthcare framework that leverages quantum computing techniques to enhance disease prediction and early risk assessment, with a focus on improving decision-making in clinical environments.
+Research Gaps:Existing preventive healthcare systems primarily rely on classical AI models, which may struggle to efficiently capture complex feature interactions in medical data. There is limited empirical evaluation of quantum-assisted machine learning models in real clinical healthcare scenarios, particularly for structured tabular datasets such as heart disease records.
+Literature Survey
+Reference 12
+Title: Quantum Machine Learning in Healthcare: Evaluating QNN and QSVM Models
+Authors: Antonio Tudisco, Deborah Volpe, and Giovanna TurvaniYear of Publication: 2025
+Objective:To evaluate the performance of Quantum Neural Networks (QNN) and Quantum Support Vector Machines (QSVM) for healthcare classification tasks, including heart failure, diabetes, and prostate cancer, with a focus on handling imbalanced medical datasets.
+Research Gaps:Most existing healthcare prediction systems rely on classical machine learning models, which often perform poorly on imbalanced datasets and fail to capture complex non-linear patterns in medical data. Limited comparative studies exist that systematically evaluate QSVM and QNN models against classical machine learning approaches on real-world healthcare datasets, highlighting the need for further investigation into the practical advantages and limitations of quantum machine learning in clinical decision support systems.
+Methodology Review
+Methodology Review
+Methodology Review
+Logistic Regression
+Methodology Review
+Random Forest
+Methodology Review
+SVM
+Methodology Review
+Methodology Review
+VQC
+Methodology Review
+Tools:
+Technologies:
+Methodology
+VS Code (Primary Development Environment)
+Node.js / npm (Frontend Build & Dependency Management)
+Qiskit Aer (Simulator for local quantum state vector calculation)
+Frontend: React, Recharts (Data Visualization), Backend:  FastAPI, Uvicorn
+Machine Learning: Scikit-Learn (Classical Architectures)
+Quantum ML: Qiskit Machine Learning, Qiskit Algorithms
+Data Processing: Pandas, NumPy
+Knowledge base:
+
+Hybrid Data Processing: Patient features are dynamically scaled and reduced using Principal Component Analysis (PCA) to accommodate quantum register limitations.
+
+Classical Intelligence: Standard ensemble models (Random Forest, SVM, Logistic Regression) are trained in real-time to provide immediate benchmarks.
+
+Quantum Classification: Uses Variational Quantum Classifiers (VQC) and Quantum Support Vector Machines (QSVM) to map health data into higher-dimensional Hilbert space for classification.
+Methodology Review
+References:
+[1] S. Prabhu, S. Gupta, G. M. Prabhu, A. V. Dhanuka, and K. V. Bhat, “QuCardio: Application of Quantum Machine Learning for Detection of Cardiovascular Diseases,” IEEE Access, vol. 11, pp. 136122–136135, 2023. Available: https://ieeexplore.ieee.org/document/10335179
+
+[2] M. Banday, S. Zafar, P. Agarwal, M. Afshar Alam, S. S. Biswas, I. Hussain, and K. M. Abubeker, “Predictive Analysis of Heart Disease Using Quantum-Assisted Machine Learning,” Discover Applied Sciences, 2025.
+
+[3] Y. Babu, P. Ramya, and J. Gracewell, “Revolutionizing Heart Disease Prediction with Quantum-Enhanced Machine Learning,” Scientific Reports, vol. 14, art. no. 7453, 2024. Available: https://www.nature.com/articles/s41598-024-55991-w
+
+[4] A. Kumar, D. Dhanka, A. Sharma, R. Bansal, M. Fahlevi, F. Rabby, and M. Aljuaid, “A Hybrid Framework for Heart Disease Prediction Using Classical and Quantum-Inspired Machine Learning Techniques,” Scientific Reports, 2025. Available: https://www.nature.com/articles/s41598-025-09957-1
+
+[5] K. S. Rawat and T. Sharma, “Heart Diseases Prediction System Using Quantum Technology,” Network Modeling Analysis in Health Informatics and Bioinformatics, vol. 14, no. 1, 2025. Available: https://doi.org/10.1007/s13721-025-00623-0
+[6] H. Jothi D., M. Y. Ali S., and G. A. Yokesh Kumar, “AI-Based Preventive Healthcare Using Quantum Computing,” Journal of Nanoscience, NanoEngineering & Applications, vol. 15, no. 02, 2025.
